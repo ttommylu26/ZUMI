@@ -1,0 +1,329 @@
+body{
+    background-color: rgb(246, 246, 246);
+}
+
+.overflow--off{
+    overflow-y: hidden;
+}
+
+.redes-sociales{
+    position: fixed;
+    bottom: 0; left: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-icon{
+    font-size: 30px;
+    border-radius: 0.2cm;
+    text-decoration-line: none;
+    padding: 1mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    color: white;
+    text-decoration-line: none;
+    margin: 1mm;
+}
+
+.whatsapp-icon{
+    background-color: #1cd444;
+}
+
+.twitter-icon{
+    background-color: #04a4f4;
+    color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* nav */
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eb3c3c;
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+    color: white;
+    font-size: 30px;
+    z-index: 1000;
+}
+
+nav img{
+    width: 2.2cm;
+    transform: rotateZ(10deg);
+    animation: img 2s infinite;
+}
+
+@keyframes img{
+    0%{
+    transform: rotateZ(10deg);        
+    }
+    50%{
+    transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(10deg);
+    }
+}
+
+nav i{
+    font-size: 45px;
+    left: 6mm;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    padding: 2mm;
+    transition: all .2s;
+    border-radius: 0.2cm;
+}
+
+.menu-icon--rotate{
+    transform: rotateZ(90deg);  
+}
+/* termina nav */
+
+/* header */
+header{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    background-color: #eb3c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    text-shadow: -2px 0px 60px black;
+    background-image: url("../img/index/patron-de-jugos-blanco.svg"); background-repeat: no-repeat;
+    background-position: center; background-size: cover;
+}
+/* termina header */
+
+/* menu */
+.menu-container{
+    position: fixed; top: 0; left: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: none;
+}
+
+.menu-container--show{
+    display: block;
+}
+
+.menu-triangulo{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    position: absolute;
+    top: 1.2cm;
+    left: 2.1cm;
+    transform: rotateZ(-180deg);
+    animation: menu .2s;
+}
+
+menu{
+    background-color: white;
+    width: max-content;
+    position: absolute;
+    top: 0.9cm;
+    left: 89px;
+    animation: menu .2s;
+    transition: all .2s;
+}
+
+@keyframes menu{
+    0%{
+        opacity: 0%;
+        left: 80px;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+menu ul{
+    list-style: none;
+}
+
+menu ul li{
+    margin: 1.5mm;
+}
+
+menu ul li a{
+    color: black;
+    text-decoration-line: none;
+    padding: 0.5mm;
+    display: block;
+    padding: 1mm;
+}
+
+menu ul li a:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+menu ul li a i{
+    font-size: 13px;
+    font-weight:900;
+    display: inline-block;
+    transition: all .2s;
+}
+
+menu ul li ul{
+    animation: prueba .2s;   
+    display: none; 
+}
+
+@keyframes prueba{
+    0%{
+        line-height: 0px;
+    }
+    100%{
+        line-height: 22px;
+    }
+}
+
+.menu-li-ul--show{
+    display: block;
+}
+
+.menu-li-arrow--rotate{
+    transform: rotateX(180deg);
+}
+
+.menu-target{
+    background-color: rgb(230, 230, 230);
+}
+/* termina menu */
+
+/* section1 */
+.section1{
+    padding: 2mm;
+}
+
+    /* jugos */
+    .jugos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    .jugo{
+        width: 4.5cm;
+        height: max-content;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 3mm;
+        border-radius: 0.2cm;
+        text-align: center;
+        margin: 3mm;
+    }
+
+    .jugo img{
+        width: 2.5cm;
+    }
+
+    .jugo h4{
+        color: #eb3c3c;
+        font-size: large;
+        width: max-content;
+    }
+
+    .jugo h4:hover{
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+
+        /* información de sabores */
+        .sabores-info{
+            background-color: white;
+            max-width: 20cm;
+            padding: 2mm;
+            margin: 1cm;
+            display: flex;
+        }
+
+        .sabores-info img{
+            width: 3.5cm;
+        }
+
+        .sabores-info-elements{
+            padding: 2mm;
+        }
+
+            /* sabor naranja */
+                .naranja-info-container{
+                    padding: 5mm;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed; top: 0; left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+        
+                .naranja-info--show{
+                    display: flex;
+                }
+
+                #naranja-info-button-close{
+                    position: fixed;
+                    top: 0; right: 0;
+                    padding: 3mm;
+                    font-size: 22px;
+                    color: white;
+                    transition: all .2s;    
+                }
+
+                #naranja-info-button-close:hover{
+                    opacity: 75%;
+                    cursor: pointer;    
+                }
+                /* termina sabor naranja */
+
+                /* sabor uva */
+                .uva-info-container{
+                    padding: 5mm;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed; top: 0; left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+
+                .uva-info--show{
+                    display: flex;
+                }
+
+                #uva-info-button-close{
+                    position: fixed;
+                    top: 0; right: 0;
+                    padding: 3mm;
+                    font-size: 22px;
+                    color: white;
+                    transition: all .2s;    
+                }
+
+                #uva-info-button-close:hover{
+                    opacity: 75%;
+                    cursor: pointer;    
+                }
+
