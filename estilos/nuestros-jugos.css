@@ -326,4 +326,101 @@ menu ul li ul{
                     opacity: 75%;
                     cursor: pointer;    
                 }
+                /* termina sabor uva */
+
+                /* sabor durazno */
+                .durazno-info-container{
+                    padding: 5mm;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed; top: 0; left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+
+                .durazno-info--show{
+                    display: flex;
+                }
+
+                #durazno-info-button-close{
+                    position: fixed;
+                    top: 0; right: 0;
+                    padding: 3mm;
+                    font-size: 22px;
+                    color: white;
+                    transition: all .2s;    
+                }
+
+                #durazno-info-button-close:hover{
+                    opacity: 75%;
+                    cursor: pointer;    
+                }
+                /* termina sabor durazno */
+
+                /* sabor manzana */
+                .manzana-info-container{
+                    padding: 5mm;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed; top: 0; left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+
+                .manzana-info--show{
+                    display: flex;
+                }
+
+                #manzana-info-button-close{
+                    position: fixed;
+                    top: 0; right: 0;
+                    padding: 3mm;
+                    font-size: 22px;
+                    color: white;
+                    transition: all .2s;    
+                }
+
+                #manzana-info-button-close:hover{
+                    opacity: 75%;
+                    cursor: pointer;    
+                }
+                /* termina sabor manzana */
+
+                /* sabor limón */
+                .limon-info-container{
+                    padding: 5mm;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed; top: 0; left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                }
+
+                .limon-info--show{
+                    display: flex;
+                }
+
+                #limon-info-button-close{
+                    position: fixed;
+                    top: 0; right: 0;
+                    padding: 3mm;
+                    font-size: 22px;
+                    color: white;
+                    transition: all .2s;    
+                }
+
+                #limon-info-button-close:hover{
+                    opacity: 75%;
+                    cursor: pointer;    
+                }
+
 

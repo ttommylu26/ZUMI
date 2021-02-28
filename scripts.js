@@ -80,3 +80,67 @@ menu.addEventListener("click", (e) => {
     uva_info_container.addEventListener("click", (e) => {
         if(e.target.classList.contains("uva-info-container")) body.classList.remove("overflow--off")
     })    
+
+    // información de sabor durazno
+    var durazno_info_button = document.getElementById("durazno-info-button");
+    var durazno_info_button_close = document.getElementById("durazno-info-button-close");
+    var durazno_info_container = document.getElementById("durazno-info-container");
+
+    durazno_info_button.addEventListener("click", () => durazno_info_container.classList.add("durazno-info--show"))
+
+    durazno_info_button.addEventListener("click", () => body.classList.add("overflow--off"))
+
+    durazno_info_button_close.addEventListener("click", () => durazno_info_container.classList.remove("durazno-info--show"))
+
+    durazno_info_button_close.addEventListener("click", () => body.classList.remove("overflow--off"))
+
+    durazno_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("durazno-info-container")) durazno_info_container.classList.remove("durazno-info--show")
+    })    
+
+    durazno_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("durazno-info-container")) body.classList.remove("overflow--off")
+    })    
+
+    // información de sabor manzana
+    var manzana_info_button = document.getElementById("manzana-info-button");
+    var manzana_info_button_close = document.getElementById("manzana-info-button-close");
+    var manzana_info_container = document.getElementById("manzana-info-container");
+
+    manzana_info_button.addEventListener("click", () => manzana_info_container.classList.add("manzana-info--show"))
+
+    manzana_info_button.addEventListener("click", () => body.classList.add("overflow--off"))
+
+    manzana_info_button_close.addEventListener("click", () => manzana_info_container.classList.remove("manzana-info--show"))
+
+    manzana_info_button_close.addEventListener("click", () => body.classList.remove("overflow--off"))
+
+    manzana_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("manzana-info-container")) manzana_info_container.classList.remove("manzana-info--show")
+    })    
+
+    manzana_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("manzana-info-container")) body.classList.remove("overflow--off")
+    })    
+
+    // información de sabor limon
+    var limon_info_button = document.getElementById("limon-info-button");
+    var limon_info_button_close = document.getElementById("limon-info-button-close");
+    var limon_info_container = document.getElementById("limon-info-container");
+
+    limon_info_button.addEventListener("click", () => limon_info_container.classList.add("limon-info--show"))
+
+    limon_info_button.addEventListener("click", () => body.classList.add("overflow--off"))
+
+    limon_info_button_close.addEventListener("click", () => limon_info_container.classList.remove("limon-info--show"))
+
+    limon_info_button_close.addEventListener("click", () => body.classList.remove("overflow--off"))
+
+    limon_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("limon-info-container")) limon_info_container.classList.remove("limon-info--show")
+    })    
+
+    limon_info_container.addEventListener("click", (e) => {
+        if(e.target.classList.contains("limon-info-container")) body.classList.remove("overflow--off")
+    })    
+
