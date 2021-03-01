@@ -280,10 +280,6 @@ menu ul li ul{
                 margin: 0.5cm;
                 text-align: center;
             }
-            .sabores-info-elements{
-                height: 5.5cm;
-                overflow-y: scroll;
-            }
         }
 
         .sabores-info img{
