@@ -231,6 +231,11 @@ menu ul li ul{
     padding: 2mm;
 }
 
+.section1 h2{
+    margin: 2mm;
+    font-weight: 200;
+}
+
     /* jugos */
     .jugos{
         display: flex;
