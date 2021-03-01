@@ -107,6 +107,23 @@ header{
     background-image: url("../img/index/patron-de-jugos-blanco.svg"); background-repeat: no-repeat;
     background-position: center; background-size: cover;
 }
+
+header div{
+    margin: 0.5cm;
+}
+
+@media(max-width: 737px){
+    header{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 655px){
+    header{
+        font-size: 20px;
+    }
+}
+
 /* termina header */
 
 /* menu */
@@ -254,6 +271,19 @@ menu ul li ul{
             padding: 2mm;
             margin: 1cm;
             display: flex;
+            font-size: 16px;
+        }
+
+        @media(max-width: 575px){
+            .sabores-info{
+                display: block;
+                margin: 0.5cm;
+                text-align: center;
+            }
+            .sabores-info-elements{
+                height: 5.5cm;
+                overflow-y: scroll;
+            }
         }
 
         .sabores-info img{
@@ -266,7 +296,6 @@ menu ul li ul{
 
             /* sabor naranja */
                 .naranja-info-container{
-                    padding: 5mm;
                     background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;
@@ -298,7 +327,6 @@ menu ul li ul{
 
                 /* sabor uva */
                 .uva-info-container{
-                    padding: 5mm;
                     background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;
@@ -330,7 +358,6 @@ menu ul li ul{
 
                 /* sabor durazno */
                 .durazno-info-container{
-                    padding: 5mm;
                     background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;
@@ -362,7 +389,6 @@ menu ul li ul{
 
                 /* sabor manzana */
                 .manzana-info-container{
-                    padding: 5mm;
                     background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;
@@ -394,7 +420,6 @@ menu ul li ul{
 
                 /* sabor limón */
                 .limon-info-container{
-                    padding: 5mm;
                     background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;

@@ -6,36 +6,6 @@ body{
     overflow-y: hidden;
 }
 
-.redes-sociales{
-    position: fixed;
-    bottom: 0; left: 0;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.redes-icon{
-    font-size: 30px;
-    border-radius: 0.2cm;
-    text-decoration-line: none;
-    padding: 1mm;
-    padding-left: 2mm;
-    padding-right: 2mm;
-    color: white;
-    text-decoration-line: none;
-    margin: 1mm;
-}
-
-.whatsapp-icon{
-    background-color: #1cd444;
-}
-
-.twitter-icon{
-    background-color: #04a4f4;
-    color: white;
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -103,9 +73,25 @@ header{
     text-align: center;
     color: white;
     font-size: 26px;
-    text-shadow: -2px 0px 60px black;
+    text-shadow: -2px 0px 35px black;
     background-image: url("../img/index/patron-de-jugos-blanco.svg"); background-repeat: no-repeat;
     background-position: center; background-size: cover;
+}
+
+header div{
+    margin: 0.5cm;
+}
+
+@media(max-width: 737px){
+    header{
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 655px){
+    header{
+        font-size: 20px;
+    }
 }
 /* termina header */
 
@@ -210,7 +196,20 @@ menu ul li ul{
 /* termina menu */
 
 /* section1 */
-section{
-    width: 100%;
-    height: max-content;
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5cm;
+}
+
+.section1 img{
+    width: 18cm;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 737px){
+    .section1 img{
+        width: 100%;
+    }
 }
